@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "Bitespeed Identity Reconciliation",
+    "_postman_id": "a182da74-d6d5-457f-a442-identity-postman",
+    "description": "Postman collection to test the /identify endpoint",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /identify",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"test@example.com\",\n    \"phoneNumber\": \"1234567890\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-production-4b66.up.railway.app/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-production-4b66", "up", "railway", "app"],
+          "path": ["identify"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

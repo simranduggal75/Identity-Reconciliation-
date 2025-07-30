@@ -34,12 +34,13 @@ Receives email and/or phoneNumber, links or creates identity in the DB.
 
 ```json
 {
-  "email": "mcfly@hillvalley.edu",
-  "phoneNumber": "123456"
+  "email": "test@example.com",
+  "phoneNumber": "1234567890"
 }
 
-### 📁 Postman Collection
+##### Sample cURL Request
 
-You can import the following collection into Postman to quickly test the API:
+curl -X POST https://identity-reconciliation-production-4b66.up.railway.app/identify \
+  -H "Content-Type: application/json" \
+  -d '{"email": "test@example.com", "phoneNumber": "1234567890"}'
 
-[`Bitespeed.postman_collection.json`](./Bitespeed.postman_collection.json)

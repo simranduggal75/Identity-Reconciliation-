@@ -30,7 +30,7 @@ A Spring Boot-based backend service to manage and reconcile customer identities 
 
 Receives email and/or phoneNumber, links or creates identity in the DB.
 
-### Request Body (JSON)
+### Request Body (JSON) 
 
 ```json
 {
@@ -38,9 +38,5 @@ Receives email and/or phoneNumber, links or creates identity in the DB.
   "phoneNumber": "1234567890"
 }
 
-##### Sample cURL Request
 
-curl -X POST https://identity-reconciliation-production-4b66.up.railway.app/identify \
-  -H "Content-Type: application/json" \
-  -d '{"email": "test@example.com", "phoneNumber": "1234567890"}'
 
